@@ -1,0 +1,121 @@
+<self html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的自我介紹</title>
+
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 標題 -->
+    <header>
+        <h1>你的名字</h1>
+        <p>資工系學生 / Software Developer</p>
+    </header>
+
+    <!-- 導覽列 -->
+    <nav>
+        <a href="#about">關於我</a>
+        <a href="#skills">技能</a>
+        <a href="#projects">專題</a>
+        <a href="#contact">聯絡方式</a>
+    </nav>
+
+    <!-- 關於我 -->
+    <section id="about">
+        <h2>關於我</h2>
+        <p>
+            在這裡寫你的自我介紹，例如你的背景、興趣、未來方向。
+        </p>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>程式語言：Python / Java / C++</li>
+            <li>前端：HTML / CSS / JavaScript</li>
+            <li>工具：Git / Linux</li>
+        </ul>
+    </section>
+
+    <!-- 專題 -->
+    <section id="projects">
+        <h2>專題經驗</h2>
+
+        <div>
+            <h3>專題名稱</h3>
+            <p>簡單描述專題內容</p>
+        </div>
+
+        <div>
+            <h3>專題名稱</h3>
+            <p>簡單描述專題內容</p>
+        </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact">
+        <h2>聯絡方式</h2>
+        <p>Email：your@email.com</p>
+        <p>GitHub：你的連結</p>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>© 2026 你的名字</p>
+    </footer>
+
+</body>
+</html>
+
+/* 全域設定 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* 標題 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 導覽列 */
+nav {
+    background-color: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 內容區塊 */
+section {
+    padding: 40px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 頁尾 */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
