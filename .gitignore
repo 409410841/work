@@ -1,0 +1,9 @@
+# 系統資料夾
+.config/
+.Trash/
+.DS_Store
+
+# Node.js / Python 常見忽略
+node_modules/
+*.log
+__pycache__/
