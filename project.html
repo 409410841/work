@@ -1,0 +1,60 @@
+<project html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成果</title>
+
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div id="header">
+    <a href="#c">c</a>
+    <a href="#python">python</a>
+    <a href="#c++">c++</a>
+    <a href="#java">java</a>
+    <a href="./index.html">回到自我介紹</a>
+    </div>
+</nav>
+<section id="#c">
+<label for="shape">選擇三角形:</label>
+<select id="shape">
+  <option value="1">左上</option>
+  <option value="2">右上</option>
+  <option value="3">左下</option>
+  <option value="4">右下</option>
+</select>
+
+<label for="size">大小:</label>
+<input type="number" id="size" value="5" min="1">
+
+<button onclick="runC()">產生三角形</button>
+
+<pre id="output"></pre>
+
+<script>
+async function runC(){
+    const size = parseInt(document.getElementById("size").value);
+    const shape = parseInt(document.getElementById("shape").value);
+
+    const res = await fetch('/run-triangle', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({shape,size})
+    });
+
+    const text = await res.text();
+    document.getElementById("output").textContent = text;
+}
+</script>
+</section>
+<section id="#python"></section>
+<section id="#c++"></section>
+<section id="#java"></section>
+<footer>
+    <a href="#header">置頂</a>
+</footer>
+</body>
+</html>
